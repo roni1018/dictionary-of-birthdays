@@ -1,0 +1,17 @@
+birthdays = {'Alice': 'Apr 1', 'Bob': 'Dec 12', 'Carol': 'Mar 4'} #dictionary unordered
+
+while True: # while loop to check if conditions are True
+    print('Enter a name: (blank to quit)') #please give a name
+    name = input() #accept name
+    if name == '': #if it is blank then we stop
+        break
+    
+    if name in birthdays: #is this name in the bday dictionary
+        print(birthday[name] + ' is the birthday of '+ name) #print the name with birthday
+    else:
+        print ('I do not have birthday information for '+ name) #if name not recognized
+        print('What is their birthday?') #what is the birthday of the unrecognized name
+        bday = input() #accept job
+        birthdays[name] = bday #update name in dictionary with bday variable
+        print ('Birthday database updated.')
+    
